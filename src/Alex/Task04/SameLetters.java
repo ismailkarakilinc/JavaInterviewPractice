@@ -9,38 +9,22 @@ public class SameLetters {
 
     public static void main(String[] args) {
 
-        same("abcd", "cba");
+        same("abc", "cba");
 
     }
 
     public static void same(String str1, String str2) {
 
-       /* ArrayList<String> arr1 = new ArrayList<>(Arrays.asList(str1));
-        ArrayList<String> arr2 = new ArrayList<>(Arrays.asList(str2));
-        arr1.addAll(List.of(str1.split("")));
-        arr2.addAll(List.of(str2.split("")));
-        Collections.sort(arr1);
-        Collections.sort(arr2);
-        if(arr1.equals(arr2)){
-      *//*  String str3 = "" + arr1;
-        String str4 = "" + arr2;*//*
-        System.out.println(arr1 + " " + arr2);}
-else {
-            System.out.println(arr1 + " " + arr2);
-        }*/
-
         List<String> list1 = new ArrayList<>(Arrays.asList(str1.split("")));
         Collections.sort(list1);
-        List<String> sortedList1 = new ArrayList<>(list1);
 
         List<String> list2 = new ArrayList<>(Arrays.asList(str2.split("")));
         Collections.sort(list2);
-        List<String> sortedList2 = new ArrayList<>(list2);
 
-        if(sortedList1.equals(sortedList2)){
-            System.out.println("both String's have the same letters :" + sortedList1 + " " + sortedList2 );
+        if(list1.equals(list2)){
+            System.out.println("both String's have the same letters :" + list1 + " " + list2 );
         }else{
-            System.out.println("letters in both words are different: " + sortedList1 + " " + sortedList2 );
+            System.out.println("letters in both words are different: " + list1 + " " + list2 );
         }
     }
 
