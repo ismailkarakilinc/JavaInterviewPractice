@@ -11,6 +11,8 @@ package Iuliia;
                     "Four":(n==5)?"Five":(n==6)?"Six":(n==7)?"Seven":(n==8)?
                     "Eight":(n==9)?"Nine":"Invalid";
             System.out.println(word);
+
+
         }
     }
 
