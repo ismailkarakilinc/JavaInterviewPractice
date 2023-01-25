@@ -14,7 +14,7 @@ public class FrequencyOfCharacters {
         String result = "";
         Set<String> set = new HashSet<>(arr);
         for (String each : set) {
-            result += " " + Collections.frequency(arr, each) + each;
+            result += "" + Collections.frequency(arr, each) + each;
         }
         return result;
     }
