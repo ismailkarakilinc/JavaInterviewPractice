@@ -14,7 +14,7 @@ public class SumString {
         for (int i = 0; i < str.length(); i++) {
             char ch = str.charAt(i);
             if(Character.isDigit(ch)){
-                sum +=ch-'0';
+                sum +=ch-48;
             }
         }
 

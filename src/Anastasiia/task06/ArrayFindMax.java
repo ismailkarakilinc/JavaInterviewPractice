@@ -10,7 +10,8 @@ public class ArrayFindMax {
 
     public static int findMax(int[] array){
 
-       int max = array[0];
+       //int max = array[0];
+        int max = Integer.MIN_VALUE;
 
         for (int each : array) {
             if(each>max){
