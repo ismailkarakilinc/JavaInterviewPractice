@@ -9,7 +9,7 @@ public class Array_FindMax {
     }
 
     public static int max(int[] n){
-       int max=Integer.MIN_VALUE;
+       int max=n[0];
         for (int each : n) {
             if(each>max){
                 max=each;
