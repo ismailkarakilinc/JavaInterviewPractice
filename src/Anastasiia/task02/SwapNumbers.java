@@ -4,12 +4,12 @@ public class SwapNumbers {
 
     public static void main(String[] args) {
 
-        int x = 3,
-                y = 8;
+        int x = 5,
+                y = 10;
 
-        y = x + y; // 3 + 8 = 11
-        x = y - x; //11 - 3 = 8
-        y = y - x; // 11 - 8 = 3;
+        x = x + y; // 5 + 10 = 15
+        y = x - y; //15 - 10 = 5
+        x = x - y; // 15 - 5 = 10;
 
         System.out.println("x = " + x);
         System.out.println("y = " + y);
